@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>WSS</title>
 </head>
 <body>
-    
+    <h1>Insertar y enviar datos con tecnologia WSS</h1>
+    <form action="" id="form">
+        <label for="">TEXTO</label><input type="text" name="texto" id="texto_text"><br>
+        <label for="">OPCION</label><input type="number" name="numero" id="numero_number"><br>
+        <input type="submit" value="enviar" id="submit">
+    </form>
+    <hr>
+    <h2>respuesta del servidor</h2>
+    <div id="contenedor"></div>
+    <script src="./index.js"></script>
 </body>
 </html>

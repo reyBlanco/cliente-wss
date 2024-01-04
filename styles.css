@@ -1,0 +1,23 @@
+html{
+    background-color: darkslategrey;
+}
+
+h1{
+    color:black;
+}
+
+#texto_text{
+    background-color: aquamarine;
+}
+
+#numero_number{
+    background-color: aquamarine;
+}
+
+#submit{
+    background-color: blue;
+}
+
+h2{
+    color: turquoise;
+}
