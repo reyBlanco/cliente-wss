@@ -6,7 +6,9 @@ const $opcion=$form.querySelector("#numero_number");
 const $submit=$form.querySelector("#submit");
 const $contenedor=d.querySelector("#contenedor");
 
-const adress="wss://192.168.100.16:3001";
+//"ws://elemental-yellow-pyroraptor.glitch.me"
+//http://192.168.100.16:3000
+const adress="ws://elemental-yellow-pyroraptor.glitch.me";
 const wss=new WebSocket(adress);
 
 wss.addEventListener("open",(ws)=>{
