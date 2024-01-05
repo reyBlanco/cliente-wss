@@ -7,11 +7,12 @@ const $submit=$form.querySelector("#submit");
 const $contenedor=d.querySelector("#contenedor");
 
 //"ws://elemental-yellow-pyroraptor.glitch.me"
-//http://192.168.100.16:3000
-const adress="ws://elemental-yellow-pyroraptor.glitch.me";
+//ws://192.168.100.16:3000
+const adress="wss://elemental-yellow-pyroraptor.glitch.me";
 const wss=new WebSocket(adress);
 
 wss.addEventListener("open",(ws)=>{
+    
     wss.send(JSON.stringify({mensaje:"hola desde el cliente"}));
     ws.preventDefault();
 });
