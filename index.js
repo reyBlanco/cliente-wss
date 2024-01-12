@@ -8,7 +8,7 @@ const $contenedor=d.querySelector("#contenedor");
 
 //"ws://elemental-yellow-pyroraptor.glitch.me"
 //ws://192.168.100.16:3000
-const adress="wss://elemental-yellow-pyroraptor.glitch.me";
+const adress="ws://elemental-yellow-pyroraptor.glitch.me";
 const wss=new WebSocket(adress);
 
 wss.addEventListener("open",(ws)=>{
@@ -23,6 +23,10 @@ wss.addEventListener("message",msg=>{
     $contenedor.innerHTML="";
     for(const atributo in getPaquete){
         if(typeof getPaquete[atributo]==="string"){
+            $contenedor.innerHTML+=`<B>${atributo}:${getPaquete[atributo]}</B><br>`;
+        }
+
+        if(typeof getPaquete[atributo]==="number"){
             $contenedor.innerHTML+=`<B>${atributo}:${getPaquete[atributo]}</B><br>`;
         }
 
